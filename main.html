@@ -5,7 +5,7 @@
 	<head>
 		<title> Homepage </title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+	</head> 
 	<body>
 		<div id="page_format">
 			<header>
@@ -28,21 +28,31 @@
 			</header>
 			<main>
 				<div id="first_time">
-					<button id="startbutton" onclick="TextAppear()"> Let`s Start </button>
+					<div id="appeartext">
+					<p> Thank You for visiting my website. If You seek to discover how I get to this point <a href="about.html"> click me </a>. If You prefer to skip formalities <a href="projects.html"> you may click here </a> and find out about my professional development.</p>
+					</div>
+					<div id="function">
+					<button id="startbutton" onclick="TextAppear()"> Who Are You </button>
 						<script>
 						function showTable() {
 							document.getElementById("short_bio").style.display = "block";
+							document.getElementById("appeartext").style.display = "block";
 						}
 						function TextAppear() {
 							var btn = document.createElement("BUTTON");  
 							btn.id = "Quick_Intro";
-							var t = document.createTextNode("Quick Intro");
+							var t = document.createTextNode("Allow me to Answer");
 							btn.appendChild(t); 
 							document.getElementById("first_time").appendChild(btn);
 							document.getElementById("startbutton").style.display = "none";
 							document.getElementById("Quick_Intro").addEventListener("click", showTable);
+							document.getElementById("Quick_Intro").addEventListener("click", hideButton);
 							}
+						function hideButton() {
+							document.getElementById("Quick_Intro").style.display = "none";
+						}
 						</script>
+						</div>
 				</div>
 				<div id="second_time">
 					<table id="short_bio">
@@ -60,17 +70,13 @@
 						</tr>
 						<tr>
 							<th>City</th>
-							<td>Rivne</td>
+							<td>Rivne, Ukraine</td>
 						</tr>
 						<tr>
 							<th>Education</th>
 							<td>B.A. in International Relations</td>
 						</tr>
 					</table>
-				</div>
-				<div id="third_time">
-				<p> Thank You for visiting my website. If You want to discover my life-story <a href="about.html"> click me </a>. If You seek to discover the area of my formal experience
-				or discover more about projects I was involved <a href="projects.html"> you may click here </a>.</p>
 				</div>
 			</main>
 			<footer>

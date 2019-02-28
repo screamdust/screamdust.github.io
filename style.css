@@ -1,14 +1,43 @@
 
+* {
+ box-sizing: border-box;
+}
+*:before,
+*:after {
+ box-sizing: border-box;
+}
 body {
 	margin: 0;
+	min-height: 100vh;
 }
 #page_format {
 	height: 1280px; 
 	width: 1024px;
+	position: relative;
 	margin: 0 auto;
 	background-image: url("background.jpg");
 }
-
+#intro_text {
+	color: white;
+	font-style: italic;
+	font-size: 36px;
+	text-align: center;
+	float: center;
+	
+}
+ #intro_text h1 {
+	color: white;
+	font-style: italic;
+	font-size: 60px;
+	text-align: center;
+	float: center;
+	margin-bottom: 20px;
+ }
+ #intro_text p {
+	 position: relative;
+	 left: 200px;
+	 margin-top: 20px;
+ }
 header {
 	height: 395px;
 	padding: 0;
@@ -17,7 +46,7 @@ header {
 
 h2 {
 	font-size: 64px;
-	color: white;
+	color: #003d99;
 	text-align: center;
 }
 }
@@ -28,7 +57,8 @@ h2 {
 
 nav ul{
 	 position: absolute;
-	 top: 350px;
+	 display: inline-block;
+	 top: 290px;
 	 height: 68px;
 	 padding-inline-start: 0px; 
 	 width: 1022px;
@@ -46,7 +76,7 @@ nav li {
 	 width: 250px;
 }
 nav li a {
-	 display: inline-start;
+	 display: inline;
 	 float: left; 
 	 text-align: center; 
 	 width: 20%;
@@ -54,20 +84,22 @@ nav li a {
 	 transition: all 0.3s ease; 
 	 color: black; 
 	 font-size: 36px;
+	 min-height: 55px;
+	 min-width: 150px;
 }
 
 nav li a:hover {
-	 background-color: green;
+	 background-color: blue;
 	 color: black;
 }
 
-nav li a.active {
+nav li a:active {
 	 background-color: #2196F3;
 	 color: white;
 } 
 
 main a:link {
-	color: #66ff66;
+	color: #ffd633;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-style: italic;
 	
@@ -90,24 +122,31 @@ nav li input[type=text] {
 #short_bio {
 	display: none;
 	background-color: white;
-	width: 300px;
+	width: 450px;
 	float: center;
-	position: relative;
-	top: 200px;
+	position: absolute;
+	bottom: 75px;
+	left: 29%;
 	border: 2px solid grey;
-	font-size: 24px;
+	font-size: 36px;
 	}
 #Quick_Intro {
+	font-size: 48px;
+	border: double;
+	border-color: blue;
 	color: #0052cc;
 	position: relative;
+	top: 150px;
 	display: inline-block;
+	background-color: transparent;
 }	
 
-#third_time {
+#appeartext {
+	display: none;
 	font-size: 36px;
 	color: white;
 	float: bottom;
-	width: 300px;
+	width: 100%;
 }
 
 table,td {
@@ -116,23 +155,27 @@ table,td {
 th {
 	text-align: center;
 	font: 36px;
-	color: red;
+	color: blue;
+	padding: 5px;
 }
 
 #startbutton {
 	border: hidden;
 	background-color: transparent;
 	position: absolute;
+	left: 35%;
+	right: 35%;
 	font-size: 64px;
 	color: Blue;
 	text-align: center
 }
 
 footer {
-		background-color: #ccddff;
+		color: white;
+		background-color: #000033;
 		font-size: 24px;
-		margin-bottom: 0;
-		position: relative;
-		top: 750px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
 		text-align: center;
 }
