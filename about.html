@@ -1,65 +1,130 @@
 <!DOCTYPE html>
 <html>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<head>
-		<title> About Page </title>
+		<title> Homepage </title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
+	</head> 
+	<body onload="doNotDo()">
 		<div id="page_format">
 			<header>
 				<div id="image">
-					<h2> About <h2>
+					<h2> Dmytro Sashchuk: Personal Website <h2>
 				</div>
-				<div id="photo_text">
+				<div id="intro_text">
 					<h1> Faber est suae quisque fortunae </h1>
-					 <p> Appius Claudius Caecus </p>
+					<p> Appius Claudius Caecus </p>
 				</div>
-				<nav>
+				<nav class="icon bar">
 					<ul>
-						<li><a href="main.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="contact.html">Contact</a></li>	
+						<li><a href="main.html"><i class="fa fa-home"></i></a></li>
+						<li><a href="about.html"><i class="fa fa-question"></i></a></li>
+						<li><a href="projects.html"><i class="fa fa-briefcase"></i></a></li>
+						<li><a href="contact.html"><i class="fa fa-phone"></i></a></li>	
 						<li> <input type="text" placeholder="Search..">
 					</ul>
 				</nav>
 			</header>
 			<main>
 				<div id="main row">
-					<div id="geography">
-						<div id="geo_part1">
-						<p> I was born in city of Rivne, Ukraine. However, the life rushed me to explore undiscovered horizonts and thus, I have ended up studying in Lithuania, at
-						<a href="https://www.lcc.lt"> LCC International University. </a> Here You are able to see numerous destinations I have been able to visit throughout my travels.</p>
+					<div id="itsme">
+						<div id="photo">
+							<img id="myphoto" src="photo.jpg" alt="Dmytro">
 						</div>
-						<div id="googlemap">
-						<iframe src="https://www.google.com/maps/d/embed?mid=1Tnxi7vnndaIf1xPoG1Ty6sjmgCvtUCoi" width="360" height="360"></iframe>
+						<div id="phototext">
+							<p> I was born and <button onclick="doThis()"> grew up in...</button>. The choise <button onclick="doThat()"> of University is often...</button>. At LCC <button onclick="doFinale()"> I learned...</button>. 
+							Now, I am <button onclick="doFinal()"> looking forward to...</button></p>
 						</div>
-					</div>
-					<div id="novel1">
-						<p> "Who you wonna be upon growing up?" The question every kid had faced numerous times. Indeed, everyone of us has had a dream of becoming an astrounaut, pilot or surgeoun. I was not an exception and had a list of potential professions starting up with a dream of becoming president to a pilot. 
-						However, fresh mind was prone to change preferences in profession rather quickly and thus I turned to a "first love" of many boys all over the world - soccer. I actively trained everyday thinking of perspective of becoming new Ronaldo or Messi, but the sudden news about Osgoodâ€“Schlatter disease made it impossible to continue aiming for soccer career.
-						 </p>
-					</div>
-					<div id="novel2">
-						<p> Surely, after short-lasting "footbal career", I thought of different direction for professional development that has had range of option. At first I thought of lawyer or economist career as at the time these arose to be rather prestigious occupations.
-						But one idea did not let me become definite about future, and thus I kept going on thinking. Until, certain dramatic changes in Ukrainian political arena, I doubted my decision but certain personal events in addition to the country`s domestic affairs made me definite.
-						The one thing that I wanted the most brightly inspired my choise - I wanted to help the people. This naive idea pushed me think how best can I employ the skills I possess to produce best possible outcome for the humanity. Hence the International Relations and Development Program became my choice.
-						</p>
-					</div>
-					<div id="novel3">
-						<p> Studying 1000 km away from home is not the easy thing, indeed. But diverse community of LCC (many of whom came from way farer than I) as well as my child dream of being a part of a change kept me going. The experince that I gained throughout 4 years of studying here have already become the part of my dream 
-						</p>
+						<script>
+						function doNotDo() {
+						window.setTimeout("document.getElementById('myphoto').style.display='none';", 4500)
+						}
+						function doThis() {
+							var x = document.getElementById("context");
+							var y = document.getElementById("geography");
+							if (x.style.display === "none" && y.style.display === "block") {
+							x.style.display = "block";
+							y.style.display = "none";
+								} else {
+							x.style.display = "none";
+							y.style.display = "block";
+							}
+						}	
+						function doThat() {
+							var x = document.getElementById("context2");
+							var y = document.getElementById("geography");
+							if (x.style.display === "none" && y.style.display === "block") {
+							x.style.display = "block";
+							y.style.display = "none";
+								} else {
+							x.style.display = "none";
+							y.style.display = "block";
+							}
+						}
+						function doFinale() {
+							var x = document.getElementById("context3");
+							var y = document.getElementById("geography");
+							if (x.style.display === "none" && y.style.display === "block") {
+							x.style.display = "block";
+							y.style.display = "none";
+								} else {
+							x.style.display = "none";
+							y.style.display = "block";
+							}
+						}
+						function doFinal() {
+							var x = document.getElementById("context4");
+							var y = document.getElementById("geography");
+							if (x.style.display === "none" && y.style.display === "block") {
+							x.style.display = "block";
+							y.style.display = "none";
+								} else {
+							x.style.display = "none";
+							y.style.display = "block";
+							}
+						}					
+						</script>
+						<div id="context" class="life-story">
+							<p> I was born and grew up in a small city of Rivne, located in Western Ukraine. My father is a truck-driver so 60% of the year I was with my mom only. As a boy I was crazy about the football and the dream of
+							of becoming a pro-player didn`t seem so unreal after our school team got 2nd place on city tournament. The misery awaited right after that, as doctors have discovered Shlatter disease, thus preventing me from
+							doing sports in the next 6 years. At first, I did not really like the school as studying was quite boring process, yet after the football incident my view has changed. I began seeing the beauty of education from the
+							new angle. By the age of 16, I actually loved learning (studying was still boring though). This love pushed me to keep pursuing education after school. </p>
+						</div>
+						<div id="context2" class="life-story">
+							<p> The choise of University is often troublesome for young people. How can you ensure that you are going to get high-quality education that is actually valuable for real life. Even more so bothers the question whether you will be able
+							to keep up with new pace of life, where the process of studying is the vital for survivability. At the time of me choosing among numerous options, my father just moved to work in Klaipeda, Lithuania and had discovered about
+							LCC International University from his collegue. The American-style University with strong emphasis on leadership that values practical skills - from the very beggining it seemed so perfect...Hardly imaginable.
+							I discovered about the mate from my city, who studied there at time so I used my chanse and contacted him to get to know more. Our conversation made me feel like that was the great place to go for things student wish to get.
+							My naive dream of "making the world" better forced me to choose the International Relations Major. Thus I`m here studying.
+							</p>
+						</div>
+						<div id="context3" class="life-story">
+							<p> At LCC I learned a lot about different culture due to the immense number of different culture that students come from. There are over 20 countries represented by LCC students community that helped a lot to make every single experience
+							vivid and unforgettable. I became especially pattionate about the development and wanted to learn as much on the topic as I could. Thankfully, the scholars that came from U.S., Beliz or Japan all contributed to
+							extend my knowledge and I am really glad about having the chanse to learn from them. </p>
+						</div>
+						<div id="context4" class="life-story">
+							<p> Now, I am looking forward to apply all my knowledge to the best of the worldwide community. I feel that diverse perspectives and critical thinking promoted in LCC will help me to reach my dream and ultimately enhance the living conditions. 
+							Everyday, somebody in the "Third World Country" experience hunger or political pressure and even if I could help one person a day my life would be worth. As for You, dear Reader, I wish You great success in all Your begginings
+							and remember - dreams come true, but You have to work for that! </p>
+						</div>
+						<div id="geography">
+							<p> Since the early childhood, I always dreamt of seeing the world. It is incredibly valuable experience to learn other cultures and discover new places and friends. Fortunately, I had quite a few chanses to travel 
+							and thus far have been to some remarkable places. Here are some of them </p>
+						<div id="googlemaps">
+						<iframe src="https://www.google.com/maps/d/embed?mid=1Tnxi7vnndaIf1xPoG1Ty6sjmgCvtUCoi" width="360" height="360" style="position:relative; top:0px; bottom: 0px; left: 663px;"></iframe>
+						</div>
+						</div>
 					</div>
 				</div>
-			</main>
-			<footer>
-				<div id="3col">
+				</main>
+				<footer>
 					<div id="1col">
-						<h1> Contacts </h1>
+					<p> &copy All rights reserved. 2019 </p>
 					</div>
-				</div>
-			</footer>
+				</footer>
+			</div>
 		</div>
 	</body>
 </html>

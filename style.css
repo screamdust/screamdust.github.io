@@ -17,6 +17,48 @@ body {
 	margin: 0 auto;
 	background-image: url("background.jpg");
 }
+#myphoto {
+	height: 256px;
+	width: 256px;
+	position: relative;
+	left: 35%;
+}
+.life-story {
+	display: none;
+	color: #E0FFFF;
+	font-size: 28px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.life-story p  {
+	word-spacing: 0.3em;
+	padding: 10px 35px;
+}
+#phototext {
+	height: 100%;
+}
+#itsme {
+	color: white;
+	font-size: 24px;
+}
+
+#phototext button {
+	border-style: outset;
+	border: none;
+	background-color: transparent;
+	padding: 10px;
+	color: #0000cc;
+	font-size: 24px;
+	font-style: italic;
+}
+#phototext button:hover {
+	background-color: grey;
+}
+
+#geography {
+	position: absolute;
+	bottom: 20px;
+}
+
 #intro_text {
 	color: white;
 	font-style: italic;
@@ -49,11 +91,8 @@ h2 {
 	color: #003d99;
 	text-align: center;
 }
-}
-#googlemap {
-	height: 360px;
-	width: 360px;
-}
+
+
 
 nav ul{
 	 position: absolute;
@@ -158,7 +197,6 @@ th {
 	color: blue;
 	padding: 5px;
 }
-
 #startbutton {
 	border: hidden;
 	background-color: transparent;
