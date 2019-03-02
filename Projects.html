@@ -2,9 +2,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<head>
-		<title> Homepage </title>
+		<title> Projects </title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+	</head> 
 	<body>
 		<div id="page_format">
 			<header>
@@ -13,6 +13,7 @@
 				</div>
 				<div id="intro_text">
 					<h1> Acta non verba </h1>
+					<p> Unknown </p>
 				</div>
 				<nav class="icon bar">
 					<ul>
@@ -25,12 +26,88 @@
 				</nav>
 			</header>
 			<main>
+			<div id="projects">
+				<button id="texttrigger" onclick="soDone()"> Story In My Eyes </button>
+			<script>
+						function soDone() {
+							var qw = document.getElementById("storyinmyeyes");
+							var qwe = document.getElementById("texttrigger");
+							qw.style.display = "block";
+							qwe.innerHTML = "Initiative For Dialogue and Conflict Transformation";
+							document.getElementById("texttrigger").addEventListener("click", changePls);
+							}
+							function changePls() {
+							var qwer = document.getElementById("storyinmyeyes");
+							var qwert = document.getElementById("initiative4dialogue");
+							qwer.innerHTML = qwert.innerHTML;
+							}
+			</script>				
+			<div id="storyinmyeyes" class="projectntd">
+				<div id="simephoto">
+					<image id="storyineyes" src="storyinmyeyes.jpg" alt="Story In My Eyes Logo">
+				</div>
+				<div id="simedesc">
+					<table class="prjdesc">
+						<tr>
+							<th> Where? </th>
+							<td> Klaipeda, Lithuania </td>
+						</tr>
+						<tr>
+							<th> When? </th>
+							<td> 03.17 - 04.18 </td>
+						<tr>
+							<th> Who? </th>
+							<td> LCC International University </td>
+						</tr>
+						<tr>
+							<th> Why? </th>
+							<td> To fight intolerance and extremism </td>
+						</tr>
+						<tr>
+							<th> Role? </th>
+							<td> Researcher, data analyst, event coordinator </td>
+						</tr>
+					</table>	
+					<h3> Story In My Eyes </h3>
+					<p> "Story In My Eyes" project started as a part of initiative to raise awareness about intolerance with the intention to produce a change. 
+					At the beggining project was founded by the group of ambicious students that participated in P2PChallenge that aims to push back on hate, violence and extremism.
+					As the part of the project the group had successfully held panel discussion, organized social experiment and conducted research on attitudes of LCC students. </p>
+				</div>
+			</div>
+			<div id="initiative4dialogue" class="projectntd">
+				<div id="ifdact">
+					<table class="prjdesc">
+						<tr>
+							<th> Where? </th>
+							<td> Klaipeda, Lithuania </td>
+						</tr>
+						<tr>
+							<th> When? </th>
+							<td> 01.19 - ongoing </td>
+						<tr>
+							<th> Who? </th>
+							<td> LCC International University </td>
+						</tr>
+						<tr>
+							<th> Why </th>
+							<td> To educate on how to effectively deal with a conflict </td>
+						</tr>
+						<tr>
+							<th> Role? </th>
+							<td> Organizer, coordinator, data collector </td>
+						</tr>
+					</table>
+					<h3> Initiative for Dialogue and Conflict Transformation </h3>
+					<p> "Initiative for Dialogue and Conflict Transformation" started to operate as an NGO beggining this year. The Initiative aims to equip people with knowledge
+					on how productively resolve the conflicts as well as provide neccessary information to prevent the conflicts. The multicultural team of IFDACT has organized 2 events so far 
+					and is looking forward to organize event beyond local community. </p>
+					</div>
+			</div>
+		</div>
 			</main>
 			<footer>
-				<div id="3col">
-					<div id="1col">
-						<h1> Contacts </h1>
-					</div>
+				<div id="1col">
+				<p> &copy All rights reserved. 2019 </p>
 				</div>
 			</footer>
 		</div>
