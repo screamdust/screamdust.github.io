@@ -1,4 +1,89 @@
-~ $ cd  screamdust.github.io
-~ $ git add --all
-~ $ git commit -m "Initial commit"
-~ $ git push -u origin master
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+		<title> Homepage </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head> 
+	<body>
+		<div id="page_format">
+			<header>
+				<div id="heading">
+					<h2> Dmytro Sashchuk: Personal Website <h2>
+				</div>
+				<div id="intro_text">
+					<h1> Ab Imo Pectore </h1>
+					<p> Julius Caesar </p>
+				</div>
+				<nav class="icon bar">
+					<ul>
+						<li><a href="main.html"><i class="fa fa-home"></i></a></li>
+						<li><a href="about.html"><i class="fa fa-question"></i></a></li>
+						<li><a href="projects.html"><i class="fa fa-briefcase"></i></a></li>
+						<li><a href="contact.html"><i class="fa fa-phone"></i></a></li>	
+						<li> <input type="text" placeholder="Search..">
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<div id="first_time">
+					<div id="appeartext">
+					<p> Thank You for visiting my website. If You seek to discover how I get to this point <a href="about.html"> click me </a>. If You prefer to skip formalities <a href="projects.html"> you may click here </a> and find out about my professional development.</p>
+					</div>
+					<div id="function">
+					<button id="startbutton" onclick="TextAppear()"> Who Are You </button>
+						<script>
+						function showTable() {
+							document.getElementById("short_bio").style.display = "block";
+							document.getElementById("appeartext").style.display = "block";
+						}
+						function TextAppear() {
+							var btn = document.createElement("BUTTON");  
+							btn.id = "Quick_Intro";
+							var t = document.createTextNode("Allow me to Answer");
+							btn.appendChild(t); 
+							document.getElementById("first_time").appendChild(btn);
+							document.getElementById("startbutton").style.display = "none";
+							document.getElementById("Quick_Intro").addEventListener("click", showTable);
+							document.getElementById("Quick_Intro").addEventListener("click", hideButton);
+							}
+						function hideButton() {
+							document.getElementById("Quick_Intro").style.display = "none";
+						}
+						</script>
+						</div>
+				</div>
+				<div id="second_time">
+					<table id="short_bio">
+						<tr>
+							<th>Firstname</th>
+							<td>Dmytro</td>
+						</tr>
+						<tr>
+							<th>Lastname</th>
+							<td>Sashchuk</td>
+						</tr>
+						<tr>
+							<th>Age</th>
+							<td>21</td>
+						</tr>
+						<tr>
+							<th>City</th>
+							<td>Rivne, Ukraine</td>
+						</tr>
+						<tr>
+							<th>Education</th>
+							<td>B.A. in International Relations</td>
+						</tr>
+					</table>
+				</div>
+			</main>
+			<footer>
+				<div id="1col">
+				<p> &copy All rights reserved. 2019 </p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
